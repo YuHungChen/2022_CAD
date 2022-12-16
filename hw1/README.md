@@ -1,4 +1,4 @@
-第一步驟 : 先求出所有prime implicant
+First : 先求出所有prime implicant
 
 (a.)	將onset、don’t care的數值  轉換成 bit  (用string呈現)
 
@@ -6,7 +6,7 @@
       (像是 1011、1111  1-11) 直到所有string都不能合併
 (c.)	應題目要求，進行sorting後並輸出  
 
-第二步驟 : 利用 Patrick’s method 找出minimum cover
+Second : 利用 Patrick’s method 找出minimum cover
 
 (a.)	 針對 XX = X     會藉由 <set> 本身的功能去判斷
   
