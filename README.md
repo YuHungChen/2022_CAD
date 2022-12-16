@@ -1,12 +1,14 @@
 # 2022_CAD
 
-#HW1
-
-#compile
+# HW1
+# compile
 g++ hw1.cpp
+# Execute
+./a.out [input.txt] [output.txt]
 
+# HW2
 
-#HW2
-
-#compile
+# compile
 make
+# Execute
+
