@@ -1,4 +1,4 @@
-all : 310580023
+all : hw2
 
 CXX = g++ -std=c++11 -g
 LINKFLAGS = -pedantic -Wall -fomit-frame-pointer -funroll-all-loops -O3
@@ -7,8 +7,8 @@ SOURCES = Lab2.cpp B_tree.cpp
 OBJECTS = Lab2.o B_tree.o
 
 
-310580023 : main.o Circuit.o
-	$(CXX) $(LINKFLAGS) main.o Circuit.o -o 310580023.o
+hw2 : main.o Circuit.o
+	$(CXX) $(LINKFLAGS) main.o Circuit.o -o hw2.o
 
 main.o : main.cpp
 	$(CXX) $(LINKFLAGS) -DCOMPILETIME="\"'date'\"" main.cpp -c
@@ -17,4 +17,4 @@ Circuit.o : Circuit.cpp Circuit.h Gate.h
 	$(CXX) $(LINKFLAGS) Circuit.cpp -c 
  
 clean:
-	rm -rf *.o *.gch 310580023
+	rm -rf *.o *.gch hw2
