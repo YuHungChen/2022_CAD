@@ -1,4 +1,5 @@
-第一步驟 : 先求出所有prime implicant  
+# 第一步驟 
+先求出所有prime implicant  
 (a.)	將onset、don’t care的數值  轉換成 bit  (用string呈現) 
   
 (b.)	進行evaluate () ， 將類似的4bit的string進行merge  
@@ -6,7 +7,8 @@
   
 (c.)	應題目要求，進行sorting後並輸出    
 
-第二步驟 : 利用 Patrick’s method 找出minimum cover  
+# 第二步驟 
+利用 Patrick’s method 找出minimum cover  
 (a.)	 針對 XX = X     會藉由 <set> 本身的功能去判斷  
     
 (b.)	 針對 X+XY = X   會將所有set中 擁有最少的string的 set代入到其他的set  
